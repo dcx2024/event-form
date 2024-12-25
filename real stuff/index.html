@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <h1>Hey, <!--Name of owner--></h1>
+    <p>Let's set up your event - it will only take a few minutes</p>
+</header>
+
+    <form>
+        <section class="event-det">
+            <h1 class="event-details-text">Event details</h1>
+            <section class="basic-section">
+        <div class="event-name">
+            <label for="event-name">Event Name</label>
+            <input type="text" id="event-name" name="event-name" maxlength="75" required></input>
+        </div>
+        <div class="event-description">
+            <label for="event-name">Describe your event</label>
+            <input type="text" id="event-description" name="event-description" required></input>
+        </div>
+
+        <div class="event-location">
+            <label for="event-location">Location of the event</label>
+            <input type="text" id="event-location" name="event-location" placeholder="Full address" required></input>
+        </div>
+
+        <div class="location-tips">
+            <label for="location-tips">Location tips</label>
+            <input type="text" id="location-tips" name="location-tips"></input>
+        </div>
+
+        </section>
+
+        
+            <div class="event-type">
+            <h1>What kind of event is it?</h1>
+            <label for="EventType">Select the applicable category for your event</label>
+            <select id="EventType" required>
+                <option value="Concert">Concert</option>
+                <option value="Conference">Conference</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Sports">Sports</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Party">Party</option>
+                <option value="Hangout">Hangout</option>
+                <option value="Other">Others (please specify below)</option>
+            </select>
+            </div>
+        
+        <section class="event-date">
+            <h1>When is the event?</h1>
+            <label for="event-time">Select all the dates of the event</label>
+            <div class="event-start">
+            <label for="Even_Start_Date" >Start Date:</label>
+            <input type="date" id="Even_Start_Date" required>
+        </div>
+        <div class="event-end">
+            <label for="Event_End_Date">End Date:</label>
+            <input type="date" id="Event_End_Date" required><br>
+        </div>
+        </section>
+
+        <section class="social-details">
+            <h1>Social Details</h1>
+            <div class="socials">
+                <span id="icon">
+                    <img src="/real stuff/images/instagram-alt-logo-24.png">
+                </span>
+                <input type="text" placeholder="Your Website URL">
+            </div>
+            <div class="socials">
+                <span id="icon">
+                    <img src="/real stuff/images/instagram-alt-logo-24.png">
+                </span>
+                <input type="text" placeholder="Your Instagram Handle">
+            </div>
+            <div class="socials">
+                <span id="icon">
+                    <img src="/real stuff/images/soundcloud-logo-24.png">
+                </span>
+                <input type="text" placeholder="Your SoundCloud URL">
+            </div>
+            <div class="socials">
+                <span id="icon">
+                    <img src="/real stuff/images/facebook-square-logo-24.png">
+                </span>
+                <input type="text" placeholder="Your Facebook URL">
+            </div>
+        </section>
+    </form>
+    <div class="buttons">
+    <button id="cancel">Cancel</button>
+    <button id="continue">Continue</button>
+</div>
+</section>
+</body>
+</html>
